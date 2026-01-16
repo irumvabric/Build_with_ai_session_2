@@ -1,0 +1,86 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap");
+
+:root {
+  /* Common Palette */
+  --primary: #00ddff;
+  --secondary: #ff0055;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Defaults (Dark Mode) */
+  --bg-color: #050505;
+  --bg-gradient: radial-gradient(circle at top right, #1a1a1a, #050505);
+  --surface-color: rgba(255, 255, 255, 0.05); /* Glassmorphism base */
+  --surface-hover: rgba(255, 255, 255, 0.1);
+  --text-color: #ffffff;
+  --text-secondary: #aaaaaa;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --overlay-bg: rgba(20, 20, 20, 0.8);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme="light"] {
+  --bg-color: #f0f2f5;
+  --bg-gradient: radial-gradient(circle at top right, #ffffff, #f0f2f5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-hover: rgba(0, 0, 0, 0.1);
+  --text-color: #1a1a1a;
+  --text-secondary: #666666;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --overlay-bg: rgba(255, 255, 255, 0.9);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bg-color);
+  background-image: var(--bg-gradient);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
