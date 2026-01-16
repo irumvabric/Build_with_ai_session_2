@@ -155,4 +155,14 @@ input:focus {
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
 </style>

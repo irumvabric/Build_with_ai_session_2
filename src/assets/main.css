@@ -84,3 +84,28 @@ button {
   background: none;
   cursor: pointer;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px; /* Slightly smaller base font size */
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

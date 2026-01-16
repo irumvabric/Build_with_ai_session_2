@@ -176,4 +176,40 @@ h1 {
   text-align: center;
   color: var(--text-secondary);
 }
+
+@media (max-width: 768px) {
+  .detail-view {
+    padding-top: 5rem;
+  }
+
+  .main-image-container {
+    height: 50vh;
+    border-radius: 0.5rem;
+  }
+
+  .artwork-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .btn-download {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .masonry-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
 </style>

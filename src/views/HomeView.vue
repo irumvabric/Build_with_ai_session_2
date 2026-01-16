@@ -104,11 +104,23 @@ const goToDetail = (id) => {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    border-radius: 0 0 1rem 1rem;
+  }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
   .masonry-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
   }
 }
 </style>
